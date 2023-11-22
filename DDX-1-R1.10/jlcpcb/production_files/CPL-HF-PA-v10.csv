@@ -1,0 +1,57 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,157.0613,-70.2056,0.0,top
+C2,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,157.0867,-72.7964,0.0,top
+C4,10n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,205.64,-76.8675,-90.0,top
+C6,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,200.63,-89.82,0.0,top
+C7,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,198.79,-97.79,90.0,top
+C8,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,142.06,-89.66,90.0,top
+C9,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,146.05,-67.31,90.0,top
+C13,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,214.39,-99.88,90.0,top
+C14,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,186.309,-74.7145,90.0,top
+C16,10u,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,166.3786,-105.5025,0.0,top
+C18,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,171.2675,-76.2,180.0,top
+C19,10n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,152.6836,-109.9675,0.0,top
+C21,100n,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,147.0025,-157.89,180.0,top
+C23,100n,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,162.3086,-105.5025,180.0,top
+C24,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,165.0725,-74.68,180.0,top
+C25,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,212.42,-148.78,0.0,top
+C26,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,178.42,-124.07,180.0,top
+C27,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,162.27,-153.83,0.0,top
+C28,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,194.84,-131.504,180.0,top
+C29,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,179.376,-145.128,0.0,top
+C30,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,165.09,-77.35,180.0,top
+C31,680p,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,173.99,-138.61,-90.0,top
+C32,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,169.88,-81.91,90.0,top
+C35,10n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,172.6475,-134.77,180.0,top
+C36, 10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,184.324,-146.5825,-90.0,top
+C37,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,192.62,-146.61,-90.0,top
+C38,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,200.37,-138.88,0.0,top
+C39,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,200.37,-141.93,180.0,top
+C40,~1n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,222.086,-142.3355,90.0,top
+C41,100n,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,219.376,-136.56,90.0,top
+C42,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,212.3735,-146.233,0.0,top
+C43,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,222.526,-148.0525,-90.0,top
+C45,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,163.39,-157.68,180.0,top
+C46,10u,C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,177.9175,-159.99,0.0,top
+C47,100n,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,159.3,-158.5375,90.0,top
+L4,Ferrite Bead (2A),L_0805_2012Metric_Pad1.05x1.20mm_HandSolder,139.58,-84.45,90.0,top
+L5,1uH,L_1206_3216Metric_Pad1.22x1.90mm_HandSolder,177.07,-130.2925,90.0,top
+Q3,AOD407,TO-252-2,192.28,-81.7,-90.0,top
+R1,100K,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,178.79,-104.46,-90.0,top
+R2,10k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,203.015,-71.6175,90.0,top
+R4,470,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,209.5754,-93.0656,180.0,top
+R6,100,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,188.564,-145.496,0.0,top
+R7,1k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,171.37,-141.56,-90.0,top
+R8,4.7k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,193.0,-74.3,0.0,top
+R9,4.7k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,203.015,-76.8175,90.0,top
+R10,10k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,205.81,-139.146,90.0,top
+R11,10k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,205.8,-144.27,-90.0,top
+R12,3.3R,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,176.32,-103.55,90.0,top
+Rb1,1k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,174.96,-152.48,0.0,top
+Rf1,4.7k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,219.426,-142.303,90.0,top
+Rin1,1k,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,214.884,-132.768,180.0,top
+Rl1,470,R_1206_3216Metric_Pad1.30x1.75mm_HandSolder,187.78,-154.48,180.0,top
+U1,L7805 (D2PAK),TO-263-2,146.245,-80.295,-90.0,top
+U2,UCC27517DBVR,SOT-23-5_HandSoldering,166.9211,-108.4425,0.0,top
+U3,L7812,TO-252-2,161.62,-82.97,180.0,top
+U4,AMS1117-3.3,SOT-223-3_TabPin2,170.76,-157.54,0.0,top
