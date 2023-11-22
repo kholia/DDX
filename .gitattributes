@@ -1,0 +1,15 @@
+firmware_analog_rx/** filter=git-crypt diff=git-crypt
+print_serial_number/** filter=git-crypt diff=git-crypt
+DDX-1/** filter=git-crypt diff=git-crypt
+DDX-2/** filter=git-crypt diff=git-crypt
+DDX-1-R1.10/HF-PA-v10.kicad_pcb filter=git-crypt diff=git-crypt
+DDX-1-R1.10/HF-PA-v10.kicad_sch filter=git-crypt diff=git-crypt
+DDX-1-R1.25/** filter=git-crypt diff=git-crypt
+CWX/** filter=git-crypt diff=git-crypt
+BPF-Compat/** filter=git-crypt diff=git-crypt
+DDX-1-Mini/** filter=git-crypt diff=git-crypt
+DDX-2-R1.10/** filter=git-crypt diff=git-crypt
+DDX-EVO-1/** filter=git-crypt diff=git-crypt
+DDX-EVO-2/** filter=git-crypt diff=git-crypt
+DDX-EVO-3/** filter=git-crypt diff=git-crypt
+MRF101-Amp/** filter=git-crypt diff=git-cryp
