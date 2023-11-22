@@ -1,0 +1,8 @@
+Comment,Designator,Footprint,LCSC
+47p,"C1,C7",C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C14857
+16p,"C3,C5",C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C152845
+270p,C4,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C501860
+240p,"C2,C6",C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C520005
+100n,"L1,L2,L3",L_1210_3225Metric_Pad1.42x2.65mm_HandSolder,C709637
+Antenna,J1,PinHeader_1x3_P2.54mm_Drill1.02mm_Modded_2,
+Input,J2,PinHeader_1x3_P2.54mm_Drill1.02mm_Modded_2,

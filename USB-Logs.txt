@@ -1,0 +1,28 @@
+[ 2724.847980] usbpd usbpd0: Type-C Sink connected
+[ 2724.873440] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[ 2724.873518] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[ 2724.878330] xhci-hcd xhci-hcd.0.auto: hcc params 0x0230fe65 hci version 0x110 quirks 0x0000000000010810
+[ 2724.878405] xhci-hcd xhci-hcd.0.auto: irq 379, io mem 0x0a600000
+[ 2724.878663] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[ 2724.878688] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[ 2724.878701] usb usb1: Product: xHCI Host Controller
+[ 2724.878712] usb usb1: Manufacturer: Linux 4.14.212-azure-Discombobulated+ xhci-hcd
+[ 2724.878725] usb usb1: SerialNumber: xhci-hcd.0.auto
+[ 2724.880416] hub 1-0:1.0: USB hub found
+[ 2724.880495] hub 1-0:1.0: 1 port detected
+[ 2724.881710] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[ 2724.881746] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[ 2724.881773] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0  SuperSpeed
+[ 2724.882028] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+[ 2724.882047] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[ 2724.882060] usb usb2: Product: xHCI Host Controller
+[ 2724.882071] usb usb2: Manufacturer: Linux 4.14.212-azure-Discombobulated+ xhci-hcd
+[ 2724.882084] usb usb2: SerialNumber: xhci-hcd.0.auto
+[ 2724.883471] hub 2-0:1.0: USB hub found
+[ 2724.883538] hub 2-0:1.0: 1 port detected
+[ 2741.219650] usb 1-1: new full-speed USB device number 2 using xhci-hcd
+[ 2741.352355] usb 1-1: New USB device found, idVendor=cafe, idProduct=4011
+[ 2741.352398] usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 2741.352411] usb 1-1: Product: MicNode
+[ 2741.352422] usb 1-1: Manufacturer: PaniRCorp
+[ 2741.352433] usb 1-1: SerialNumber: 123456
