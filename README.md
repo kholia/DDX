@@ -12,7 +12,9 @@ For a truly portable backpack setup you can combine DDX-1 with the [FT8
 Radio](https://play.google.com/store/apps/details?id=com.bunzee.ft8radio)
 Android app.
 
-![Demo Pic](./Pictures/IMG_20231203_173430.jpg)
+![Demo Pic 0](./pictures/picture.png)
+
+![Demo Pic 1](./Pictures/IMG_20231203_173430.jpg)
 
 Sample QSO (from Pune to Medellin on 10m, 15691km) on DDX-1:
 
@@ -24,6 +26,10 @@ Another sample QSO with `WW1WW` (Pune to USA):
 
 ![USA QSO](./screenshots/Screenshot_20240117-192314.png)
 
+## Render
+
+![Render](./DDX-1-R1.10/Screenshot_2023-11-16_10-58-44.png)
+
 ## Features (DDX-1)
 
 - Single USB-C cable for handling both Audio + CAT control
@@ -31,9 +37,9 @@ Another sample QSO with `WW1WW` (Pune to USA):
 - True 5W output on all HF bands. It even outputs ~1-2 W @ 50 MHz! (We now just
   need a 6m capable receiver section to build a 6m digital transceiver).
 
-- Rock-solid PA which handles open, short, and bad SWR conditions. We knowingly
-  stress-test it with untuned antennas and still manage DX (not a recommended
-  practice for sure though).
+- Rock-solid PA which handles open, short, and bad SWR conditions (1:10 SWR
+  tested). We knowingly stress-test it with untuned antennas and still manage
+  DX (not a recommended practice for sure though).
 
 - Rock-steady VFO which does NOT drift even under exposed conditions.  Yes - it
   receives WSPR at 28 MHz just fine.
@@ -61,6 +67,10 @@ Another sample QSO with `WW1WW` (Pune to USA):
 - Supports largely automated assembly from JLCPCB (all the required files are
   in the same GitHub repository)
 
+  ![JLCPCBA 1](./screenshots/JLCPCBA-1.png)
+  ![JLCPCBA 2](./screenshots/JLCPCBA-2.png)
+  ![JLCPCBA 3](./screenshots/JLCPCBA-3.png)
+
 - DDX-1 comes with a free, open-source AGPLv3 licensed firmware.
 
 - No calibration is (ever) required. Just pick up DDX-1 and it is ready to go
@@ -72,22 +82,6 @@ Another sample QSO with `WW1WW` (Pune to USA):
 
 - DDX-1 routinely receives FT8 traffic from 80 to 100+ countries using a simple
   5m long EFHW antenna.
-
-## Features (DDX-EVO-1)
-
-DDX-EVO-1 will have the following additional features.
-
-- SSB receiver with DSP!
-
-- Software volume control
-
-- AGC!
-
-- Smaller PCB size (90x70)
-
-- Even more simpler design - less things to go wrong
-
-![Sneak peek](./screenshots/Screenshot_2024-03-21_10-22-18.png)
 
 ## License
 
@@ -165,15 +159,14 @@ from them, and produce more rugged designs with time and experience.
 
   This chaotic, random behaviour was indeed tough to debug.
 
-  This seems to have been caused by the earlier missing following line of code:
+  [July 2024] This was caused by a missing regulator! IRF510 gate voltage needs
+  to be less than 11.5v or so! Else, the IRF510 may "oscillate", suddenly
+  produce too much power, and then randomly stop producing power, and so on.
 
-  ```C
-  si5351_drive_strength(SI5351_CLK0, SI5351_DRIVE_8MA); // Set max. power for TX (UCC driver)
-  ```
-
-  After increasing the output drive of SI5351_CLK0 from 2mA (default) to 8mA,
-  the problem went away for good! This is NOT the first (or perhaps the last)
-  time we have run into this bug.
+  Once we installed U3 (78M09) regulator - which ensures that the IRF510 gate
+  only sees 9v - this problem went away in a reliable fashion. If you still
+  want to skip installing this regulator, then operating DDX at 10.50v also
+  works great!
 
 ## Power on sequence (Laptops along with USB-C to USB-A cable)
 
@@ -217,10 +210,6 @@ ordering guide in it.
 In case of any doubts / confusion, refer to the latest version of the
 `HF-PA-v10.pdf` document. Note: Not everything needs to be populated on the PCB.
 
-## Render
-
-![Render](./DDX-1-R1.10/Screenshot_2023-11-16_10-58-44.png)
-
 ## Building the firmware (for Linux users)
 
 Shortcut: Upload the pre-built `.uf2` file to the RP2040 Board and skip
@@ -256,9 +245,14 @@ the repository) to this new drive. Done!
 
 DDX-1 was tested with the following power sources.
 
+- SUGON 3005D Adjustable Digital DC Power - RECOMMENDED
+
+- USB battery bank with PD 3.0 and >= 18W output and 15V PD decoy module
+  (RECOMMENDED, safe, portable, durable)
+
 - RUIDENG DPS5020 power supply module (@13v) powered by MEAN WELL / Mornsun SMPS
 
-- 3S "12V" Li-ion 18650 battery pack (RECOMMENDED!)
+- 3S "12V" Li-ion 18650 battery pack (can be "volatile")
 
 ## Planned Action Items
 
@@ -305,10 +299,35 @@ The power section design is the trickiest part, and we are sure that it is NOT
 foolproof! With USB-C power in picture, we have to resort to power-on
 sequencing tricks additionally.
 
-Our next design DDX-EVO-1 will be simpler and more rugged. We might also switch
-to a SMPS-styled 7805 replacement! Perhaps the CAPUF DC-DC converter modules
-work well without too much noise after heavy CLC filtering. We can keep the
+Our next design DDX-EVO-1 will be simpler and more rugged. We can keep the
 audio (output) path completely analog and separated from the MCU. Generous
 usage of PPTC fuses will be made in order to ensure graceful failure(s). CAT
 control over WiFi will be possible by shifting from RP2020-Zero to WeMos D1
 Mini / ESP32-S3-Zero.
+
+## Features (DDX-EVO-1)
+
+DDX-EVO-1 will have the following additional features.
+
+- SSB receiver with DSP!
+
+- Software volume control
+
+- AGC!
+
+- Smaller PCB size (90x70)
+
+- Even more simpler design - less things to go wrong
+
+![Sneak peek](./screenshots/Screenshot_2024-03-21_10-22-18.png)
+
+Known limitations of `DDX-EVO-1`: Si4732 is NOT the best for receiving WSPR. It
+drifts a lot even with a TCXO clock input.
+
+## The future of DDX
+
+https://github.com/kholia/PicoRX/tree/master/PCB/Easy-uSDX-v4
+
+![QDX RX](./screenshots/Screenshot_2024-06-25_16-46-24.png)
+
+Is QSD RX the future? Time will tell... stay tuned my friends!

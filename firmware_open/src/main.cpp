@@ -444,6 +444,10 @@ void watchdog_task() {
 
 char buf[64];
 
+extern "C" {
+	void packtext77(const char* text, uint8_t* b77);
+}
+
 //--------------------------------------------------------------------+
 // USB CDC
 //--------------------------------------------------------------------+
@@ -489,9 +493,12 @@ void cdc_task(void)
           printf("Cannot parse message!\n");
           printf("RC = %d\n", (int)rc);
 #endif
-          colorWipe(onboard.Color(0, 255, 255), 0); // Blue-green (cyan)
-          sleep_ms(1000);
-        }
+          // sleep_ms(1000);
+          if (strlen(current_message) <= 13) {
+            packtext77(current_message, (uint8_t *)&msg.payload);
+            colorWipe(onboard.Color(0, 255, 255), 0); // Blue-green (cyan)
+          }
+	}
         int num_tones = (is_ft4) ? FT4_NN : FT8_NN;
         // Second, encode the binary message as a sequence of FSK tones
         if (is_ft4) {
