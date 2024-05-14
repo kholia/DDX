@@ -5078,10 +5078,22 @@
 		(uuid "1ac54ce1-7594-4b84-a7bc-4ef35cacd1d4")
 	)
 	(junction
+		(at 218.44 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1eacb32a-766d-484a-ab78-47805069afc8")
+	)
+	(junction
 		(at 170.18 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21041a3e-045c-410d-a2ac-7443e57054c2")
+	)
+	(junction
+		(at 223.52 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "229aeb5a-81f9-4cb6-8a6c-ff3e96821a07")
 	)
 	(junction
 		(at 38.1 175.26)
@@ -5264,6 +5276,12 @@
 		(uuid "b82b1f63-0c1a-468e-9f63-c59e9ed4e6c3")
 	)
 	(junction
+		(at 228.6 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8542350-3b42-4dbf-8c57-5097344f9b45")
+	)
+	(junction
 		(at 182.88 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5298,6 +5316,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f614aa14-4383-4166-8e14-bf9237276024")
+	)
+	(junction
+		(at 223.52 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f93beecf-a72c-4c2f-94bf-9719a0379375")
 	)
 	(no_connect
 		(at 107.95 154.94)
@@ -5489,7 +5513,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 67.31) (xy 228.6 67.31)
+			(xy 198.12 67.31) (xy 218.44 67.31)
 		)
 		(stroke
 			(width 0)
@@ -5596,6 +5620,26 @@
 			(type default)
 		)
 		(uuid "41550a67-375e-4a65-ab3b-16c5e30ab437")
+	)
+	(wire
+		(pts
+			(xy 218.44 67.31) (xy 223.52 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46898a95-9350-40fe-901c-0aea013eae76")
+	)
+	(wire
+		(pts
+			(xy 223.52 72.39) (xy 228.6 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b024236-be11-4437-a295-06d00eeee007")
 	)
 	(wire
 		(pts
@@ -6009,16 +6053,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 72.39) (xy 233.68 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "946871db-eacd-47b0-9152-335749d901bc")
-	)
-	(wire
-		(pts
 			(xy 167.64 44.45) (xy 170.18 44.45)
 		)
 		(stroke
@@ -6199,6 +6233,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 72.39) (xy 223.52 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b293b3df-c98f-48dd-a483-40462c80e2d0")
+	)
+	(wire
+		(pts
 			(xy 50.8 62.23) (xy 52.07 62.23)
 		)
 		(stroke
@@ -6336,6 +6380,16 @@
 			(type default)
 		)
 		(uuid "d06bf161-c3a0-4ef3-89a4-8d1ba202483c")
+	)
+	(wire
+		(pts
+			(xy 223.52 67.31) (xy 228.6 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d244688a-b8e0-450d-bf50-32c5f3bebe25")
 	)
 	(wire
 		(pts
@@ -10023,7 +10077,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "10n"
 			(at 233.934 71.374 0)
 			(effects
 				(font
@@ -10078,6 +10132,84 @@
 			(project "digital-amp"
 				(path "/816a895b-d385-40fc-87bf-7154a813d474"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 223.52 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e456206-493a-40ac-9fc4-cfe076986bb0")
+		(property "Reference" "C18"
+			(at 223.774 68.072 0)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 223.774 71.374 0)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ext" "HV"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97eb3321-9177-41e9-9cae-66ec5b911585")
+		)
+		(pin "2"
+			(uuid "a9dd8473-0a10-4b09-9bc2-e0bc09585f60")
+		)
+		(instances
+			(project "digital-amp"
+				(path "/816a895b-d385-40fc-87bf-7154a813d474"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -11956,7 +12088,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 233.68 74.93 0)
+		(at 228.6 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11964,7 +12096,7 @@
 		(dnp no)
 		(uuid "a80f8464-a37f-4a81-a651-670a324f65d4")
 		(property "Reference" "#PWR054"
-			(at 233.68 81.28 0)
+			(at 228.6 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11973,7 +12105,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 233.68 78.74 0)
+			(at 228.6 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11982,7 +12114,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 74.93 0)
+			(at 228.6 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11991,7 +12123,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 74.93 0)
+			(at 228.6 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12000,7 +12132,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 74.93 0)
+			(at 228.6 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12877,6 +13009,84 @@
 			(project "digital-amp"
 				(path "/816a895b-d385-40fc-87bf-7154a813d474"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 218.44 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd08fa15-ce0d-439d-8f22-b15140245916")
+		(property "Reference" "C17"
+			(at 218.694 68.072 0)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n"
+			(at 218.694 71.628 0)
+			(effects
+				(font
+					(size 0.9906 0.9906)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 218.44 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 218.44 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ext" "HV"
+			(at 218.44 69.85 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3112d7df-68e3-41a0-982d-d8cc3d5ad857")
+		)
+		(pin "2"
+			(uuid "3b98a26e-5dd8-4855-8957-e39e12b589e9")
+		)
+		(instances
+			(project "digital-amp"
+				(path "/816a895b-d385-40fc-87bf-7154a813d474"
+					(reference "C17")
 					(unit 1)
 				)
 			)

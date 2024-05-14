@@ -31,9 +31,9 @@ Another sample QSO with `WW1WW` (Pune to USA):
 - True 5W output on all HF bands. It even outputs ~1-2 W @ 50 MHz! (We now just
   need a 6m capable receiver section to build a 6m digital transceiver).
 
-- Rock-solid PA which handles open, short, and bad SWR conditions. We knowingly
-  stress-test it with untuned antennas and still manage DX (not a recommended
-  practice for sure though).
+- Rock-solid PA which handles open, short, and bad SWR conditions (1:10 SWR
+  tested). We knowingly stress-test it with untuned antennas and still manage
+  DX (not a recommended practice for sure though).
 
 - Rock-steady VFO which does NOT drift even under exposed conditions.  Yes - it
   receives WSPR at 28 MHz just fine.
