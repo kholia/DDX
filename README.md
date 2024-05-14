@@ -20,6 +20,10 @@ Sample QSO (from Pune to Medellin on 10m, 15691km) on DDX-1:
 
 ![Medellin QSO](./screenshots/Screenshot_2024-01-05_18-27-05.png)
 
+QSO with Paraguay:
+
+![Paraguay QSO](./screenshots/Screenshot_2024-08-01_21-49-08.png)
+
 Who doesn't want a QSO from Medellin after binge-watching Narcos? ;)
 
 Another sample QSO with `WW1WW` (Pune to USA):
