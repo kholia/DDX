@@ -365,7 +365,7 @@
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(arc
@@ -377,7 +377,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
@@ -2903,7 +2903,7 @@
 			(symbol "R_Potentiometer_Trim_US_0_1"
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 0 2.54)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -2915,7 +2915,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -4515,7 +4515,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:L7809"
+		(symbol "Regulator_Linear:LM7809_TO220"
 			(pin_names
 				(offset 0.254)
 			)
@@ -4530,7 +4530,7 @@
 					)
 				)
 			)
-			(property "Value" "L7809"
+			(property "Value" "LM7809_TO220"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -4539,18 +4539,17 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 0.635 -3.81 0)
+			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+				(at 0 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
-					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
+			(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
 				(at 0 -1.27 0)
 				(effects
 					(font
@@ -4559,7 +4558,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 9V, TO-220/TO-263/TO-252"
+			(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 9V, TO-220"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4568,7 +4567,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 1.5A Positive"
+			(property "ki_keywords" "Voltage Regulator 1A Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4577,7 +4576,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?252* TO?263* TO?220*"
+			(property "ki_fp_filters" "TO?220*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4586,7 +4585,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "L7809_0_1"
+			(symbol "LM7809_TO220_0_1"
 				(rectangle
 					(start -5.08 1.905)
 					(end 5.08 -5.08)
@@ -4599,11 +4598,11 @@
 					)
 				)
 			)
-			(symbol "L7809_1_1"
+			(symbol "LM7809_TO220_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "IN"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4639,7 +4638,7 @@
 				(pin power_out line
 					(at 7.62 0 180)
 					(length 2.54)
-					(name "OUT"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8132,16 +8131,6 @@
 		)
 		(uuid "03a59285-25dc-48dd-9c42-b26aedd051be")
 	)
-	(text "DPAK"
-		(exclude_from_sim no)
-		(at 223.266 54.864 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0f53a0f2-8413-4fbf-be20-d99dc3cbb09c")
-	)
 	(text "T/R switch (with RX grounding)"
 		(exclude_from_sim no)
 		(at 53.848 22.606 0)
@@ -8695,12 +8684,6 @@
 		(uuid "2ccb752d-365e-48ee-a9b0-02f28955477f")
 	)
 	(junction
-		(at 187.96 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2cd132cf-5b3c-452e-82ee-2c83bc22acba")
-	)
-	(junction
 		(at 111.76 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8977,12 +8960,6 @@
 		(uuid "bd635285-9283-495e-bcca-9e1270bb31de")
 	)
 	(junction
-		(at 236.22 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bdf889cd-ab00-49cc-b173-fd80eaaeefa4")
-	)
-	(junction
 		(at 208.28 203.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8993,6 +8970,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0be77fc-7e01-4d18-8448-c68a21f276dc")
+	)
+	(junction
+		(at 187.96 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1344391-d6e1-409a-b453-4e15d8aab67d")
 	)
 	(junction
 		(at 40.64 317.5)
@@ -9432,7 +9415,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 20.32) (xy 236.22 22.86)
+			(xy 236.22 20.32) (xy 236.22 58.42)
 		)
 		(stroke
 			(width 0)
@@ -10522,6 +10505,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 22.86) (xy 193.04 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f79dca5-9339-43d9-94e1-d9fde561fb0e")
+	)
+	(wire
+		(pts
 			(xy 200.66 203.2) (xy 200.66 208.28)
 		)
 		(stroke
@@ -10729,16 +10722,6 @@
 			(type default)
 		)
 		(uuid "7f293106-edd0-4559-b815-00270e4803bf")
-	)
-	(wire
-		(pts
-			(xy 236.22 58.42) (xy 236.22 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82786f16-061a-4cf6-b342-bd5f15ba9198")
 	)
 	(wire
 		(pts
@@ -11409,16 +11392,6 @@
 			(type default)
 		)
 		(uuid "b4377b67-e40a-4822-a9ef-f2816ef65021")
-	)
-	(wire
-		(pts
-			(xy 187.96 22.86) (xy 236.22 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b488f468-5922-4b01-a265-c20571bb3029")
 	)
 	(wire
 		(pts
@@ -14947,6 +14920,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+9V")
+		(at 193.04 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e727b9d-067d-41ab-b586-0da61bd834d6")
+		(property "Reference" "#PWR043"
+			(at 193.04 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+9V"
+			(at 193.04 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 193.04 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6c574db-82b8-474f-b8f9-0a59fb15625a")
+		)
+		(instances
+			(project "DDX-1-R2.20"
+				(path "/cb614b23-9af3-4aec-bed8-c1374e001510"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 76.2 33.02 0)
 		(unit 1)
@@ -16524,79 +16563,6 @@
 			(project "HF-PA-v10"
 				(path "/cb614b23-9af3-4aec-bed8-c1374e001510"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:L7809")
-		(at 217.17 58.42 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3dd2a4b9-5af8-4d66-ba96-9838153b294a")
-		(property "Reference" "U3"
-			(at 212.598 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L7809"
-			(at 217.17 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "footprints:TO-252-2-Longer"
-			(at 216.535 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-			(at 217.17 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 9V, TO-220/TO-263/TO-252"
-			(at 217.17 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cc7e5896-8297-4876-976c-c5396f3e0ea0")
-		)
-		(pin "1"
-			(uuid "9f0320ca-1af7-4c93-a917-358e77501f6b")
-		)
-		(pin "3"
-			(uuid "f15d4031-e800-4ca9-92fd-446a0f55ae32")
-		)
-		(instances
-			(project ""
-				(path "/cb614b23-9af3-4aec-bed8-c1374e001510"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -25893,6 +25859,78 @@
 			(project "HF-PA-v10"
 				(path "/cb614b23-9af3-4aec-bed8-c1374e001510"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:LM7809_TO220")
+		(at 217.17 58.42 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec0f2d8e-a59f-48c4-a078-69e6e47e51b5")
+		(property "Reference" "U3"
+			(at 217.17 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM7809_TO220"
+			(at 217.17 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "footprints:TO-220-3_Horizontal_TabDown"
+			(at 217.17 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF"
+			(at 217.17 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Positive 1A 35V Linear Regulator, Fixed Output 9V, TO-220"
+			(at 217.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44ff9d26-5a57-46aa-9e18-0f6da5b03bd6")
+		)
+		(pin "3"
+			(uuid "4b930208-91db-48d5-af9c-f96fecaf128e")
+		)
+		(pin "2"
+			(uuid "827ea6b9-a2d1-4bfb-9c76-88f9a925cad1")
+		)
+		(instances
+			(project ""
+				(path "/cb614b23-9af3-4aec-bed8-c1374e001510"
+					(reference "U3")
 					(unit 1)
 				)
 			)

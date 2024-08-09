@@ -8,6 +8,12 @@ DDX-1 is a 'silent' radio which can be heard almost all over the world!
 Complete BOM (everything) estimate: ~1500 INR (15 to 25 USD depending on
 the configuration).
 
+Current versions:
+
+- DDX-1 R1.10: 5W digital transceiver (FOSS)
+
+- DDX-Commercial-1: 10W digital transceiver (Commercial)
+
 For a truly portable backpack setup you can combine DDX-1 with the [FT8
 Radio](https://play.google.com/store/apps/details?id=com.bunzee.ft8radio)
 Android app.
@@ -89,7 +95,7 @@ Another sample QSO with `WW1WW` (Pune to USA):
 
 ## License
 
-COMMERCIAL USAGE IS FORBIDDEN (aka NOT ALLOWED).
+COMMERCIAL USAGE IS FINE NOW - the design is proven to work well ;)
 
 NO SUPPORT and NO GUARANTEE is provided to individuals! This is because we are
 a small team, and we want to make progress with maximum velocity to bring you
@@ -119,7 +125,7 @@ Performance of CD2003-with-BPF is >= 80% of that of RSP1 SDR, at least!
 
 It receives WSPR @ 28 MHz ;)
 
-![Stability](./screenshots/WSPR-RX-"Breadboard"/Screenshot_2023-11-24_19-29-06.png)
+![Stability](./screenshots/WSPR-RX-Breadboard/Screenshot_2023-11-24_19-29-06.png)
 
 ## WSPR TX Performance
 
@@ -151,6 +157,9 @@ DDX-1 has already made hundreds of QSOs on air.
     All this said, our BPF filters are within `~0.3dB` (S21 LOGMAG value) of
     the QRP Labs' BPF filters, and are much quicker to build and test (assuming you
     can solder 0805 SMD components).
+
+    August-2024 update: We are now designing external TX-BPFs which will be
+    super easy to build, test, and use - stay tuned!
 
 ## Known failure modes
 
@@ -251,18 +260,12 @@ DDX-1 was tested with the following power sources.
 
 - SUGON 3005D Adjustable Digital DC Power - RECOMMENDED
 
-- USB battery bank with PD 3.0 and >= 18W output and 15V PD decoy module
+- USB battery bank with PD 3.0 and >= 35W output and 15V or 20V PD decoy module
   (RECOMMENDED, safe, portable, durable)
 
 - RUIDENG DPS5020 power supply module (@13v) powered by MEAN WELL / Mornsun SMPS
 
 - 3S "12V" Li-ion 18650 battery pack (can be "volatile")
-
-## Planned Action Items
-
-- Test DDX-1 end-to-end on MS Windows.
-
-- Upstream major portions of the `firmware` to the TinyUSB or other projects.
 
 ## Safety Tips
 
@@ -297,21 +300,9 @@ Are you interested in such projects, and spam-free technical discussions?
 
 If yes, you might be interested in joining [the 'HAMBREWERS' Telegram group](https://t.me/+TwzGyKGe8_QI_B3y).
 
-## DDX-1 Learnings (26-Jan-2024)
+## Notes on `DDX-EVO-*`
 
-The power section design is the trickiest part, and we are sure that it is NOT
-foolproof! With USB-C power in picture, we have to resort to power-on
-sequencing tricks additionally.
-
-Our next design DDX-EVO-1 will be simpler and more rugged. We can keep the
-audio (output) path completely analog and separated from the MCU. Generous
-usage of PPTC fuses will be made in order to ensure graceful failure(s). CAT
-control over WiFi will be possible by shifting from RP2020-Zero to WeMos D1
-Mini / ESP32-S3-Zero.
-
-## Features (DDX-EVO-1)
-
-DDX-EVO-1 will have the following additional features.
+DDX-EVO-1 has the following additional features.
 
 - SSB receiver with DSP!
 
@@ -326,7 +317,8 @@ DDX-EVO-1 will have the following additional features.
 ![Sneak peek](./screenshots/Screenshot_2024-03-21_10-22-18.png)
 
 Known limitations of `DDX-EVO-1`: Si4732 is NOT the best for receiving WSPR. It
-drifts a lot even with a TCXO clock input.
+drifts a lot even with a TCXO clock input. Given this limitation, `DDX-EVO-*`
+series is on hold for now.
 
 ## The future of DDX
 

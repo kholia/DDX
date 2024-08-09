@@ -14,3 +14,6 @@ DDX-EVO-2/** filter=git-crypt diff=git-crypt
 DDX-EVO-3/** filter=git-crypt diff=git-crypt
 MRF101-Amp/** filter=git-crypt diff=git-cryp
 SplitTransceiver/** filter=git-crypt diff=git-cryp
+DDX-1-R2.50/** filter=git-crypt diff=git-cryp
+DDX-Commercial-1/** filter=git-crypt diff=git-cryp
+Transmit-BPFs/** filter=git-crypt diff=git-cryp
