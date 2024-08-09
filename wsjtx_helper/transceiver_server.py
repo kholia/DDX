@@ -235,6 +235,7 @@ def change_frequency(new_frequency):
     if new_frequency >= 30000000: # 30 MHz
         print("Ignoring bogus frequency change...")
         return
+    return  # safety hack
     print("> Change frequency to:", new_frequency)
     sport.write(b'*f')
     sport.write(str(new_frequency).encode("ascii"))
