@@ -12,7 +12,7 @@ Current versions:
 
 - DDX-1 R1.10: 5W digital transceiver (FOSS)
 
-- DDX-Commercial-1: 10W digital transceiver (Commercial)
+- DDX-Commercial-3: 10W digital transceiver (Commercial)
 
 For a truly portable backpack setup you can combine DDX-1 with the [FT8
 Radio](https://play.google.com/store/apps/details?id=com.bunzee.ft8radio)
@@ -327,3 +327,10 @@ https://github.com/kholia/PicoRX/tree/master/PCB/Easy-uSDX-v4
 ![QDX RX](./screenshots/Screenshot_2024-06-25_16-46-24.png)
 
 Is QSD RX the future? Time will tell... stay tuned my friends!
+
+## DDX-Commercial-*
+
+![DDX Commercial](./screenshots/Screenshot_2024-10-01_08-17-58.png)
+
+10W+ transceiver based on Pico 2 MCU platform. Beats IC-705 in terms of
+efficiency and power consumption!

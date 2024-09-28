@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Band_MODULE_V1_00-rescue")(type "KiCad")(uri "${KIPRJMOD}/Band_MODULE_V1_00-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "dk_Rectangular-Connectors-Headers-Male-Pins")(type "KiCad")(uri "${KIPRJMOD}/dk_Rectangular-Connectors-Headers-Male-Pins.kicad_sym")(options "")(descr ""))
+)
