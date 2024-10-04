@@ -18,7 +18,7 @@ For a truly portable backpack setup you can combine DDX-1 with the [FT8
 Radio](https://play.google.com/store/apps/details?id=com.bunzee.ft8radio)
 Android app.
 
-![Demo Pic 0](./pictures/picture.png)
+![Demo Pic 0](./Pictures/picture.png)
 
 ![Demo Pic 1](./Pictures/IMG_20231203_173430.jpg)
 

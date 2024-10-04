@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "Band_MODULE_V1_00-rescue")(type "Legacy")(uri "${KIPRJMOD}/Band_MODULE_V1_00-rescue.lib")(options "")(descr ""))
-  (lib (name "dk_Rectangular-Connectors-Headers-Male-Pins")(type "Legacy")(uri "${KIPRJMOD}/dk_Rectangular-Connectors-Headers-Male-Pins.lib")(options "")(descr ""))
-)
