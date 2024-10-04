@@ -18,3 +18,4 @@ DDX-1-R2.50/** filter=git-crypt diff=git-crypt
 DDX-Commercial-1/** filter=git-crypt diff=git-crypt
 Transmit-BPFs/** filter=git-crypt diff=git-crypt
 experiments/** filter=git-crypt diff=git-crypt
+RX-TX-BPF-2025/** filter=git-crypt diff=git-crypt
