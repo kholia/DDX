@@ -1,0 +1,233 @@
+Forgive the long post please. I have extensive experience of the Si5351A
+now as many of the QRP Labs products are based around this miraculous
+little chip. So to some extent, I do know something about what I am
+talking about here ;-)
+
+*_DDS vs PLL_*
+
+This confuses a lot of people so just to clear this up at the start. DDS
+is Direct Digital Synthesis which simulates a sinewave by accumulating
+numbers in an internal register at regular intervals (determined by the
+system reference oscillator e.g. often 125MHz for the simple AD9850 DDS
+modules that are common). This accumulated count goes to a Digital To
+Analogue converter (DAC) in the chip, and through an anti-aliasing
+filter (which you must add external to the chip). Due to the discrete
+stepped nature of the simulated output sinewave, the frequency spectrum
+has spurs and this is a feature of DDS. Higher ratio of reference to
+output frequency, and wider DAC bit width both reduce the spurs. Analog
+Devices has market dominance of DDS chips and some very expensive high
+end chips as well as the more common cheaper ones. 
+
+The SiLabs Si5351A and Si570 chips implement a totally different Phase
+Locked Loop (PLL) based method of synthesising arbitrary frequencies.
+The Digital PLL is all inside the tiny 3 x 3mm chip and replaces an
+entire circuit board of earlier synthesisers some decades back! The chip
+multiplies a 27MHz (or 25MHz) reference up to an internal Voltage
+Controlled Oscillator (VCO) in the range 600-900MHz, which you can then
+divide down to get the desired output frequency. Any PLL has the
+characteristic of adding phase noise to the crystal reference frequency.
+How much phase noise is added depends on many factors, particularly the
+loop bandwidth - in the Si5351A and Si570 the loop bandwidth is low
+(slow loop) and this really makes the phase noise very low. 
+
+I just mention this because a lot of people seem to mistakenly refer to
+the Si5351A as a "DDS" which it totally is not! And also to be clear
+that a feature of DDSs is spurious outputs (like birdies in a receiver)
+whereas a feature of PLLs is phase noise. Nothing is for free! In modern
+devices I think that for the majority of applications both of these
+undesirable features are usually negligible.
+
+*_Upper frequency limit:_* 
+
+The upper frequency limit of the Si5351A-B chip is 200MHz. Not the
+widely circulated 160MHz. The 160MHz applied to the earlier chip
+revision. The QRP Labs Synth kit http://qrp-labs.com/synth uses the
+current -B revision (200MHz limit) and I expect any other hobby boards
+using this chip are also using the -B revision of the chip. 
+
+*_Practical frequency limits:_* 
+
+The practical frequency limits are even wider than the datasheet
+suggests. The datasheet says the internal VCO frequency should be
+600-900MHz. If you are prepared to disrepect this specification, then
+who knows what performance parameters may be affected, but it DOES at
+least seem to work... bear in mind that in any case, some performance
+parameters degrade with frequency in any case, so your own frequency
+limit might be lower. The configuration registers of the Si5351A can be
+configured to allow operation down to 3.5kHz. The upper limit,
+determined here by measurement, was approx 292MHz. Other QRP Labs kit
+builders have also confirmed similar figures. Beyond 292MHz my Si5351A
+simply stopped producing an output. The cut-off was quite sudden. 
+
+*_Phase noise compared to Si570:_* 
+
+Perhaps one of the biggest (probable) myths, is that the Si5351A has
+high phase noise so we shouldn't use it if we care about noise! Of
+course every application does have different requirements and trade-offs
+are always present. Base the trade-offs on reality though not on rumour.
+The Si5351A and Si570 might be said to come from the same family of
+digital PLL chips but they do have a lot of differences. 
+
+The Si5351A multiplies the 27MHz (or 25MHz) crystal reference up to an
+internal PLL frequency of 600-900MHz. Then it is divided down in the
+so-called "Multi-synth" stages to produce the desired output frequency
+(or frequencies). Both the multiplication up, and the division down, are
+fractional divisors - an integer and a fractional part made of 20-bit
+numerator and denominator. 
+
+The Si570 has an integer-only division ratio down to the output
+frequency. The Si5351A has a fractional division ratio. The Si5351A
+datasheet recommends using even integer divisors to minimise output
+jitter (a.k.a. phase noise). This makes sense! Think about dividing by 2
+a few times, it is a relatively clean process. On the other hand if you
+divide by 45 and 132,448 / 382,124ths for example, you can imagine that
+the fractional division will result in a messy output pulse stream. In
+other words, much worse phase noise. 
+
+The jitter specifications in the Si5351A datasheet are noted to be
+"worst case, real world" and it says they "Jitter is highly dependent on
+device frequency configuration". We don't know what configuration they
+used and whether they used even integer or not. The "worst case" note
+seems to imply not. SiLabs documentation is quite poor in some respects. 
+
+I'm saying you can't just compare datasheet jitter specifications... a
+lot of evaluation and measurement would probably be needed side by side
+to determine how the Si5351A really compares to the Si570 in actual use. 
+
+All the QRP Labs firmware (and example source code) use the minimum
+jitter even integer divider mode. 
+
+Note also that Elecraft use the Si5351A in the KX2, not the Si570.
+Everyone knows Elecraft make great radios. So there's a fair argument
+that what's good enough in an Elecraft rig cannot be too bad ;-)
+
+Both an Si5351A and an Si570 would be worse phase noise than a
+crystal... but then again, a crystal isn't movable over 3.5kHz to
+292MHz... An interesting article on the QRP Labs website by Gwyn G3ZIL
+about comparing the Si5351A to a crystal LO in a practical receiver. The
+article is interesting not just because of its conclusion that an
+Si5351A does a great job for practical real world purposes, but also
+because it stresses the importance of clean supplies when using the
+Si5351A. Noise on the supply line does easily modulate the Si5351A
+output. So keep that in mind when designing around the Si5351A.
+See http://www.qrp-labs.com/synth/synthnoise.html
+
+*_The controversial PLL reset and audio "pops"_*:
+
+Yes, when you do a PLL reset, it interrupts the output frequencies for
+some milliseconds and that will make a nasty "pop" in your audio. This
+PLL reset is one of the most misunderstood aspects of using the Si5351A.
+For good reason! The SiLabs documentation is poor and does not explain
+clearly when you need it and when you do not! I know that there is the
+knowledgebase
+article http://community.silabs.com/mgrfq63796/attachments/mgrfq63796/Timing_Discussion%40tkb/61/1/311668.pdf
+dealing with the topic, which says a PLL reset is required every time the PLL
+feedback registers are changed. This document also refers to another KB
+article 311538 which when you open it, mysteriously contains exactly the
+same contents as 311668. Which is typical of the Si5351A documentation -
+even the AN619 (choosing a register map) contains lots of errors and
+duplication caused by copy-and-paste without subsequent necessary edits.
+I don't want to be too harsh because I know only too well it is quite a
+big job, keeping documentation all in order. 
+
+When you first set up the Si5351A registers the first time, you need to
+do a PLL reset otherwise nothing works. You do NOT need to do a PLL
+reset for subsequent PLL feedback divider changes! I have not been able
+to find any size of frequency change where a PLL reset is required.
+Certainly incrementally tuning across an amateur band requires no PLL
+reset. Given the datasheet comments and the fact that evidently you do
+at least need one PLL reset at the start, I remained a bit nervous and
+in my code I do generate a PLL reset when there is a "large" frequency
+step... what does "large" mean, who knows. I arbitrarily set it to 10kHz
+and no QRP Labs customer has ever had a problem with it to the best of
+my knowledge. 
+
+What the datasheet does NOT tell you, is that if you wish to use the
+phase offset feature to maintain an accurate and constant phase offset
+between two of the Si5351A outputs on the same frequency - then you MUST
+do a PLL reset under two circumstances:
+
+1) Every time you change the MultiSynth divider (whether integer or
+fractional) - note, the MutliSynth divider! Not the PLL feedback
+divider! Which is kind of opposite to the documentation... but trust me,
+this is the way the chip actually works
+
+2) Every time you switch the outputs on/off using the Clock Control
+registers e.g. Register 16. If you are about phase relationships,
+INCLUDING if you have simply set a 180-degree phase relationship to
+another clock output using the clock invert bit in the clock control
+register, even then, you have to do a PLL Reset.
+
+If you don't do the PLL reset under these two circumstances then the
+phase offset will be random. Frequency will be fine though - this part
+of the PLL reset discussion only applies to when you wish to have a
+precise phase offset between outputs. Examples which I use are when you
+want push-pull outputs (180-degree phase difference), some people use
+this for driving a LF PA; or when you want 90-degree phase offset for
+switching a Quadrature Sampling Detector type mixer which requires a
+quadrature LO. 
+
+I have not seen any of this anywhere in SiLabs documentation, I reached
+the above conclusions after hours and hours of experimenting...
+
+It is very interesting to me that the few circumstances in which a PLL
+reset is actually required, apparently are related to the use of the
+MutliSynth Divider stage of the chip - not the PLL! It almost makes me
+wonder if this PLL reset register is totally misnamed and totally
+misunderstood - should it really be called the "MultiSynth Reset Register"? 
+
+*_Difficulty_*
+
+There is a view that programming the Si5351A is difficult - or perhaps,
+much more difficult than a DDS chip. I would agree that it is more
+difficult conceptually than loading a 40-bit tuning word into a DDS. But
+not MUCH more difficult! Sure, you have to get your head around the
+Si5351A. You had to get your head around the DDS too, it's just that the
+DDS has been around for longer and we have got more used to it. 
+
+In either case, the internet is now full of examples and libraries of
+how to use both families of devices, so you can easily use either
+without much deep understanding of how they work. QRP Labs has example
+code for AVR, PIC and Arduino http://qrp-labs.com/synth and is just one
+of many sites publishing source code for the Si5351A.
+
+The above discussions on PLL reset maybe sound scary but remember, the
+only reason we can discuss all this is because the Si5351A has a much
+greater capability and feature set in many ways, then a DDS. The
+multiple outputs for example, which can be on different frequencies or
+different phase shifts. 
+
+*_Requirement for TCXO_*
+
+A TCXO has two benefits - first, as it is a Temperature Controlled
+Crystal Oscillator, it exhibits very low temperature dependence compared
+to an unstabilised crystal oscillator. The second benefit is that if you
+buy a 27MHz TCXO then without any further discussion, when you just
+power it up, the output frequency will be much closer to 27MHz than a
+crystal oscillator would be. For example we find that in the QRP Labs
+synth the 27MHz crystal typically operates at around 27.004MHz +/- 1kHz.
+So if you want an accurate synthesiser, then you need to measure this
+value and compensate for it in the Si5351A register configuration
+(easily done in firmware). 
+
+For all but the most demanding applications, I think the extreme
+frequency stability is not really necessary; and in many cases
+measurement (a one-off calibration) is possible so a regular crystal
+does just fine. Even in very demanding applications like weak signal
+narrow band modes 
+a basic crystal has been shown to be good enough across HF and even
+VHF all the way up to 2m. QRP Labs App Note AN001
+http://qrp-labs.com/appnotes discusses some techniques to deal with the
+drift - without a TCXO. 
+
+Bear in mind also that many of the less expensive TCXOs use a digital
+compensation method, where they measure the temperature digitally then
+apply a correction to the pull the crystal oscillator. In many cases the
+result is discrete steps on the output frequency, of several Hz. That
+can be enough to disrupt any weak signal narrowband work! 
+
+So just weigh all this up before automatically assuming you need a TCXO.
+The QRP Labs Si5351A Synth kit http://qrp-labs.com/synth has PCB
+footprints for a TCXO if you wish to use it, but personally I have not
+found it to be necessary. 
+
