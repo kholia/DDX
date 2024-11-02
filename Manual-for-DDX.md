@@ -162,7 +162,7 @@ https://www.timesynctool.com/ software.
 - DDX routinely receives FT8 traffic from 80 to 100+ countries using a simple
   5m long EFHW antenna with a BPF attached
 
-- All this in a compact 88x88mm size!
+- All this in a compact (< 100mmx100mm) size!
 
 # Firmware Upgrade
 
