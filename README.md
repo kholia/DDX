@@ -9,7 +9,7 @@ DDX-1 is a 'silent' radio which can be heard almost all over the world!
 
 Current versions:
 
-- DDX-Commercial-3: 5W+ digital transceiver (Commercial, Latest Upgraded Version)
+- DDX-Commercial-7: 5W+ digital transceiver (Commercial, Latest Upgraded Version)
 
 - DDX-1 R1.10: 5W digital transceiver (FOSS)
 

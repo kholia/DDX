@@ -78,9 +78,9 @@ The following items are required for operating DDX:
 
 # Power-on sequence
 
-- First connect the Micro-USB cable from DDX to the PC or phone
+- First, connect the Micro-USB cable from DDX to the PC or phone
 
-- Turn on the DC power supply (using the onboard switch)
+- Next, turn on the DC power supply (using the onboard switch)
 
 # Usage (with WSJT-X)
 
@@ -91,6 +91,8 @@ The following items are required for operating DDX:
 * Select `MicNode` as the Soundcard Input.
 
   ![WSJT-X 2](./screenshots/WSJTX-2.png)
+
+  Tip: The `Soundcard Output` setting does NOT matter.
 
 * Ensure the following default settings are present.
 
@@ -123,6 +125,8 @@ PS: See https://github.com/kholia/DigitalRadioReceiverSupport/tree/master/NewApp
 For best results, we recommend syncing time on your laptop / PC using
 https://www.timesynctool.com/ software.
 
+On Android, open the https://time.is/ site to see the clock delta.
+
 # Features
 
 - Comes as a fully assembled and fully tested-on-air board
@@ -139,7 +143,7 @@ https://www.timesynctool.com/ software.
 
 - Reliable T/R switching based on a DPDT relay
 
-- No toroids to wind assuming an external TX-BPF is in use ;-)
+- No toroids to wind with the TX-BPF in use ;-)
 
 - The final MOSFET remains as cool as a cucumber (Class-D operation)
 
