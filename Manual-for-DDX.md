@@ -4,6 +4,16 @@ DDX is a rugged 5W+ digital transceiver featuring manual band switching and
 flexible power capabilities. Designed for reliability and ease of use, it's
 perfect for digital modes like FT8.
 
+# Supported Modes
+
+- FT8
+
+# Other Modes
+
+- WSPR (a dedicated firmware is in the works)
+
+- FT4 (support can be added as per demand)
+
 # Power Specifications
 
 - Solid 5W+ output at 13.8v
@@ -15,6 +25,8 @@ perfect for digital modes like FT8.
 The following items are required for operating DDX:
 
 - Power Source (Choose one)
+
+  - USB PD 3.0 battery bank (portable and flight-safe option)
 
   - Traditional "12V" battery (4S LFP or 3S Li-ion or lead-acid)
 
@@ -36,6 +48,8 @@ The following items are required for operating DDX:
 
 - TX-BPF (*HIGHLY RECOMMENDED* for good performance and compliance, *REQUIRED* if you have radio interference problems)
 
+  Tip: Buy one filter for your favorite band and then keep adding more later on
+
   Sources: eBay / AliExpress
 
   Cost: ~45 USD
@@ -45,9 +59,6 @@ The following items are required for operating DDX:
   ![TX-BPF 1](./Pictures/BPF-1-reduced.png)
 
   ![TX-BPF 2](./Pictures/BPF-28-1-reduced.png)
-
-  If you have the budget, better TX-BPF filters are available from SurgeStop
-  (Morgan Systems).
 
   While many amateur radio operators focus *solely* on antenna optimization,
   the significant benefits of TX-BPF filters are often overlooked or
@@ -60,6 +71,20 @@ The following items are required for operating DDX:
 
   Can be useful depending on your operating conditions.
 
+# Supplied components
+
+- 2 x mica insulator pads (for IRF510 and 7809 regulator)
+
+- 2 x TO-220 bushes (for IRF510 and 7809 regulator)
+
+- 2 x steel screws + spring washers + regular washers + nuts
+
+- 1 x 5.5x2.1mm DC power cable (male connector)
+
+- [Optional] Small TO-220 + TO-3 heat sinks
+
+- [Optional] M3 standoffs
+
 # Assembly Steps
 
 - Connect the fully assembled DDX board to a heat sink (heat sink can supplied
@@ -67,9 +92,22 @@ The following items are required for operating DDX:
 
   ![Heat Sink](./screenshots/heat-sink-reduced.jpg)
 
-
-  The heat sink needs two holes to be made in it. A 3mm bit on a battery
+  This above heat sink needs two holes to be made in it. A 3mm bit on a battery
   powered hand drill is sufficient for the job.
+
+  [ALTERNATE HEAT SINKING OPTION]
+
+  You can also use two smaller heat sinks like the following:
+
+  - https://etstore.in/index.php/product/8087/ (Small TO-220 heatsink)
+
+  - https://www.electronicscomp.com/heat-sink-to3-40mm (Yes - a TO-3 heatsink)
+
+  The whole assembled PCB can then be raised on M3 standoffs.
+
+  ![M3 standoffs](./Pictures/M3_standoffs.jpg)
+
+  https://robu.in/product/m3-x-35mm-male-to-female-brass-hex-threaded-pillar-standoff-spacer-12-pcs/
 
 - Put the DDX board into a suitable enclosure of your choice. This is optional
   for home usage.
@@ -129,7 +167,7 @@ On Android, open the https://time.is/ site to see the clock delta.
 
 # Features
 
-- Comes as a fully assembled and fully tested-on-air board
+- It comes as a fully tested-on-air board with minimal assembly required.
 
 - Single USB connection for Audio + CAT control
 
@@ -156,19 +194,33 @@ On Android, open the https://time.is/ site to see the clock delta.
   and even large screens can fill up very rapidly - such is the receiver's
   performance (with a BPF)!
 
-- No calibration is (ever) required. Just pick up DDX and it is ready to go on
-  air. Comes with 26 MHz 0.5ppm TCXO as standard.
+  Note: The FT8CN app is NOT supported.
+
+- No calibration is usually required. Just pick up DDX and it is ready to go on
+  air. It comes with 26 MHz 0.5ppm TCXO as a standard.
 
 - Low cost (cost-effective)
 
 - Stress tested by WSJT-Z for multiple days
 
 - DDX routinely receives FT8 traffic from 80 to 100+ countries using a simple
-  5m long EFHW antenna with a BPF attached
+  5m long EFHW antenna with a BPF attached.
+
+  And we use a SMPS with RuiDeng DC-DC buck module with >= 100mV ripple in our
+  testing work to "stress out" the receiver.
 
 - All this in a compact (< 100mmx100mm) size!
 
+# Limitations
+
+- Special / complex callsigns are NOT supported yet.
+
+- While we have a VFO, it is locked to certain frequencies for safety
+  reasons. You can add more allowed frequencies easily enough.
+
 # Firmware Upgrade
+
+Note: DDX comes with the firmware installed on it.
 
 - Disconnect all power sources
 
