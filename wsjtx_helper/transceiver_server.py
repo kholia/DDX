@@ -217,6 +217,7 @@ def load_msg(msg):
 
 def change_offset(new_offset):
     global freq_offset
+    freq_offset = new_offset
     print("> Change TX offset to", new_offset)
     sport.write(b'*o')
     sport.write(str(new_offset).encode("ascii"))
@@ -233,13 +234,17 @@ def change_mode(new_mode):
 def change_frequency(new_frequency):
     global frequency
     if new_frequency >= 30000000: # 30 MHz
-        print("Ignoring bogus frequency change...")
+        print("[!] Ignoring bogus frequency change from WSJT-X...")
         return
-    return  # safety hack
+    # check for valid and common ft8 frequency
+    if new_frequency not in [1840000, 3573000, 7074000, 10136000, 14074000, 18100000, 21074000, 24915000, 28074000]:
+        return
+    frequency = new_frequency
     print("> Change frequency to:", new_frequency)
     sport.write(b'*f')
     sport.write(str(new_frequency).encode("ascii"))
     sport.write(b'*')
+    # print(str(new_frequency).encode("ascii"), "XXX")
 
 def transmit():
     if not current_msg:

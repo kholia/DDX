@@ -40,7 +40,7 @@ The following items are required for operating DDX:
 
   https://www.kk5jy.net/three-wire-gp/ is a solid choice as well.
 
-- Android phone or laptop
+- Laptop / PC / Android phone
 
   The laptop can run the standard WSJT-X software.
 
@@ -201,7 +201,7 @@ On Android, open the https://time.is/ site to see the clock delta.
 
 - Low cost (cost-effective)
 
-- Stress tested by WSJT-Z for multiple days
+- Stress tested by WSJT-Z and WSJT-X for multiple days
 
 - DDX routinely receives FT8 traffic from 80 to 100+ countries using a simple
   5m long EFHW antenna with a BPF attached.
@@ -215,8 +215,8 @@ On Android, open the https://time.is/ site to see the clock delta.
 
 - Special / complex callsigns are NOT supported yet.
 
-- While we have a VFO, it is locked to certain frequencies for safety
-  reasons. You can add more allowed frequencies easily enough.
+- While we have a fully-functional VFO, it is locked to certain FT8 frequencies
+  for safety reasons. You can request addition of more frequencies as needed.
 
 # Firmware Upgrade
 
@@ -245,3 +245,5 @@ Note: DDX comes with the firmware installed on it.
 - [FT8 Radio App demo](https://www.youtube.com/watch?v=OX8Knu0yh6M)
 
 - [DDX contest writeup](https://www.electronicwings.com/users/DhiruKholia/projects/4382/global-communications-transceiver)
+
+- https://github.com/kholia/wsjtx
