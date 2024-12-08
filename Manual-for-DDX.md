@@ -30,7 +30,7 @@ The following items are required for operating DDX:
 
   - Traditional "12V" battery (4S LFP or 3S Li-ion or lead-acid)
 
-  - 21v input is also fine, and produces more power
+  - 20v input (typically via PD 3.0) is also fine, and produces more power
 
 - An antenna
 
@@ -39,6 +39,9 @@ The following items are required for operating DDX:
   See https://github.com/kholia/HF-Balcony-Antenna-System for an example.
 
   https://www.kk5jy.net/three-wire-gp/ is a solid choice as well.
+
+  The `Banggood` store also sells an EFHW 49:1 transformer for a reasonable
+  price.
 
 - Laptop / PC / Android phone
 
@@ -67,9 +70,17 @@ The following items are required for operating DDX:
   Even with HOA antenna restrictions, you can still optimize your station's
   performance through proper TX-BPF filtering.
 
+  Update (December-2024): [We have open-sourced our TX-BPF designs here](https://github.com/kholia/DDX/tree/master/RX-TX-BPF-2025-v2).
+
 - [Optional] Common-mode choke (CMC)
 
   Can be useful depending on your operating conditions.
+
+- [Optional] PD Trigger Module
+
+  Something like [this module](https://punoscho.in/product/usb-qc-pd-afc-trigger-decoy-board-module-15v/).
+
+- [Optional] 10 meters plus of coax cable if operating an EFHW antenna.
 
 # Supplied components
 
@@ -186,6 +197,10 @@ On Android, open the https://time.is/ site to see the clock delta.
 - The final MOSFET remains as cool as a cucumber (Class-D operation)
 
 - DDX has a bit-perfect, deterministic TX output
+
+  We simply do NOT use the audio tones emitted by the PC (or phone).
+
+  We implement the various FSK encoders on the MCU itself.
 
 - It works beautifully with the 'FT8 Radio' app
   (https://github.com/kholia/DigitalRadioReceiverSupport/). The 'FT8 Radio' app
