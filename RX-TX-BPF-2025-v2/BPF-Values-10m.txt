@@ -1,0 +1,19 @@
+28 MHz
+------
+
+L1: 1.3uH needed. 18 turns on T50-6 measured 1.369uH.
+
+CS1: 27pF needed. Cap measured 28.90pF.
+
+CP1 (TDK disk ceramic, SL dielectric): Measured 120.7pF
+
+L2: 18 turns on T50-6. Measured 1.356uH.
+
+CS2 (WIMA FKP 2): Measured 34.29pF. Need 33pF.
+
+CP2 (TDK disk ceramic, SL dielectric): Measured 120.6 pF
+
+L3: 17T on FT50-6 measured 1.271uH. Since CS3 is a bit higher, L3 can be a bit
+smaller. Confirmed response shape via Elsie.
+
+CS3: Measured 29.99pF (should be 27pF).

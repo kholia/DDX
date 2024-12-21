@@ -1,0 +1,18 @@
+14 MHz
+------
+
+L1: 1.6uH needed. 20 turns on T50-6.
+
+CS1: 100pF
+
+CP1: 330pF
+
+L2: 1.76 uF. 21 turns on T50-6.
+
+CS2: 120 pF
+
+CP2: 300pF
+
+L3: 1.6uH
+
+CS3: 100pF

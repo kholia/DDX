@@ -190,10 +190,12 @@
       ],
       "track_widths": [
         0.0,
+        0.34925,
         1.0,
         1.27,
         2.0,
-        2.54
+        2.54,
+        2.7097
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {

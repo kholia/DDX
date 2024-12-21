@@ -4,6 +4,8 @@ DDX is a rugged 5W+ digital transceiver featuring manual band switching and
 flexible power capabilities. Designed for reliability and ease of use, it's
 perfect for digital modes like FT8.
 
+DDX is brought to you by `Yantra Research`!
+
 # Supported Modes
 
 - FT8
@@ -16,9 +18,9 @@ perfect for digital modes like FT8.
 
 # Power Specifications
 
-- Solid 5W+ output at 13.8v
+- ~5W output @ 15v on 28 MHz (after strong BPF)
 
-- 10W+ ouput at higher voltages (external fan REQUIRED!)
+- ~7W output @ 20v on 28 MHz (after strong BPF)
 
 # Requirements
 
@@ -26,11 +28,11 @@ The following items are required for operating DDX:
 
 - Power Source (Choose one)
 
-  - USB PD 3.0 battery bank (portable and flight-safe option)
+  - USB PD 3.0 battery bank (portable and flight-safe option) - RECOMMENDED!
 
   - Traditional "12V" battery (4S LFP or 3S Li-ion or lead-acid)
 
-  - 20v input (typically via PD 3.0) is also fine, and produces more power
+  20v input (typically via PD 3.0) is RECOMMENDED!
 
 - An antenna
 
@@ -51,6 +53,8 @@ The following items are required for operating DDX:
 
 - TX-BPF (*HIGHLY RECOMMENDED* for good performance and compliance, *REQUIRED* if you have radio interference problems)
 
+  Update (December-2024): [We have open-sourced our TX-BPF designs here](https://github.com/kholia/DDX/tree/master/RX-TX-BPF-2025-v2).
+
   Tip: Buy one filter for your favorite band and then keep adding more later on
 
   Sources: eBay / AliExpress
@@ -69,8 +73,6 @@ The following items are required for operating DDX:
 
   Even with HOA antenna restrictions, you can still optimize your station's
   performance through proper TX-BPF filtering.
-
-  Update (December-2024): [We have open-sourced our TX-BPF designs here](https://github.com/kholia/DDX/tree/master/RX-TX-BPF-2025-v2).
 
 - [Optional] Common-mode choke (CMC)
 
@@ -192,7 +194,7 @@ On Android, open the https://time.is/ site to see the clock delta.
 
 - Reliable T/R switching based on a DPDT relay
 
-- No toroids to wind with the TX-BPF in use ;-)
+- No toroids to wind with the external TX-BPF in use ;-)
 
 - The final MOSFET remains as cool as a cucumber (Class-D operation)
 
@@ -262,3 +264,9 @@ Note: DDX comes with the firmware installed on it.
 - [DDX contest writeup](https://www.electronicwings.com/users/DhiruKholia/projects/4382/global-communications-transceiver)
 
 - https://github.com/kholia/wsjtx
+
+# Pricing
+
+- Option 1: Kit with all components (including Pico 2 and TCXO Si5351 module) and blank PCB: 2499 INR (shipping within India included).
+
+- Option 2: 80% assembled boards with remaining components (including Pico 2 and TCXO Si5351 module): 3999 INR (shipping within India included).
