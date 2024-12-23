@@ -270,3 +270,11 @@ Note: DDX comes with the firmware installed on it.
 - Option 1: Kit with all components (including Pico 2 and TCXO Si5351 module) and blank PCB: 2499 INR (shipping within India included).
 
 - Option 2: 80% assembled boards with remaining components (including Pico 2 and TCXO Si5351 module): 3999 INR (shipping within India included).
+
+# Note
+
+We do NOT have the resources to provide any support at the moment. We expect
+our customers to be hands-on `home brewers`.
+
+DDX is NOT (yet) targeted at `appliance operator` category of amateur radio
+operators.
