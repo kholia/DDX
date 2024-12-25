@@ -53,9 +53,11 @@ The following items are required for operating DDX:
 
 - TX-BPF (*HIGHLY RECOMMENDED* for good performance and compliance, *REQUIRED* if you have radio interference problems)
 
-  Update (December-2024): [We have open-sourced our TX-BPF designs here](https://github.com/kholia/DDX/tree/master/RX-TX-BPF-2025-v2).
+  Update (December-2024): [We have open-sourced our TX-BPF designs here](https://github.com/kholia/DDX/tree/master/RX-TX-BPF-2025-v2). Our filters works great and can be homebrewed!
 
-  Tip: Buy one filter for your favorite band and then keep adding more later on
+  To truly unlock the performance of CD2003, a TX-BPF filter is a **MUST**.
+
+  Tip: Buy or build one filter for your favorite band and then keep adding more later on
 
   Sources: eBay / AliExpress
 
@@ -85,6 +87,8 @@ The following items are required for operating DDX:
 - [Optional] 10 meters plus of coax cable if operating an EFHW antenna.
 
 # Supplied components
+
+- DDX transceiver
 
 - 2 x mica insulator pads (for IRF510 and 7809 regulator)
 
@@ -271,10 +275,14 @@ Note: DDX comes with the firmware installed on it.
 
 - Option 2: 80% assembled boards with remaining components (including Pico 2 and TCXO Si5351 module): 3999 INR (shipping within India included).
 
+- Option 3 (SLOW!): Fully assembled and on-air tested DDX: 4999 INR plus shipping at actuals. Note: Heat sink is removed prior to international shipping.
+
 # Note
 
 We do NOT have the resources to provide any support at the moment. We expect
 our customers to be hands-on `home brewers`.
 
-DDX is NOT (yet) targeted at `appliance operator` category of amateur radio
+DDX is NOT targeted at `appliance operator` category of amateur radio
 operators.
+
+Note: There are NO guarantees provided.
