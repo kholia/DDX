@@ -1,7 +1,7 @@
 (kicad_sch
 	(version 20241209)
 	(generator "eeschema")
-	(generator_version "8.99")
+	(generator_version "9.0")
 	(uuid "8c7c31ce-540a-4b41-8881-9f964afe27dd")
 	(paper "User" 150.012 150.012)
 	(title_block
@@ -965,7 +965,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Topology: Mesh capacitor-coupled bandpass (Elsie)"
+	(text "Topology design by Elsie"
 		(exclude_from_sim no)
 		(at 80.772 68.834 0)
 		(effects
@@ -976,40 +976,16 @@
 		(uuid "bf7a1eab-e8de-4485-a399-c0fced20857e")
 	)
 	(junction
-		(at 80.01 58.42)
+		(at 76.2 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "064bdf2c-19f3-44ef-a2b8-185689d2a57b")
+		(uuid "109b3fb5-d4ca-49bc-9829-9365d4d4da5c")
 	)
 	(junction
-		(at 83.82 58.42)
+		(at 76.2 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "122d069a-94b3-4e83-a029-65f6c5335617")
-	)
-	(junction
-		(at 99.06 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1a5461d2-f944-4ce0-8757-5fb2dd1ab815")
-	)
-	(junction
-		(at 62.23 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "267d77a1-5428-4990-b659-404001af36ba")
-	)
-	(junction
-		(at 58.42 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2916fb7d-5bcf-4130-9017-bdc2dce545ff")
-	)
-	(junction
-		(at 52.07 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37c6eda5-9a82-4fd4-a18e-46d423f83ef4")
+		(uuid "26d46bd6-b842-4741-b75f-f24f9a7210c7")
 	)
 	(junction
 		(at 77.47 82.55)
@@ -1018,16 +994,16 @@
 		(uuid "3965966f-5d16-46f2-9b04-84e62b22b745")
 	)
 	(junction
-		(at 66.04 58.42)
+		(at 88.9 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "421abdac-f446-49b4-ada8-58ea82653c80")
 	)
 	(junction
-		(at 80.01 52.07)
+		(at 82.55 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6090a2bc-0783-41ed-98e6-4a9b17e55541")
+		(uuid "6141075d-6ab1-4f36-8199-bcb529820cfe")
 	)
 	(junction
 		(at 81.28 82.55)
@@ -1036,46 +1012,28 @@
 		(uuid "635c6042-6ec6-473e-90e5-317e744f7db5")
 	)
 	(junction
-		(at 62.23 52.07)
+		(at 88.9 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "70960261-19d4-4721-b728-0a126f7385cd")
+		(uuid "68a5f840-7698-4df4-a0b1-ca86a2c0ca0e")
 	)
 	(junction
-		(at 72.39 52.07)
+		(at 68.58 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "918d5f63-ad71-4739-9af5-34cbbf6ed3d4")
+		(uuid "aaf6b99f-b28a-4095-b0df-1c2b5a70166d")
 	)
 	(junction
-		(at 93.98 52.07)
+		(at 78.74 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b254c72f-4324-42df-988b-38d38affb78e")
+		(uuid "ac9b40de-64f5-4bca-9a5c-6977916e69ec")
 	)
 	(junction
-		(at 66.04 52.07)
+		(at 82.55 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b7970230-a35d-4aa8-a763-64143bf2c952")
-	)
-	(junction
-		(at 87.63 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bff11261-c02a-4f4c-a71e-5d8689193ecd")
-	)
-	(junction
-		(at 77.47 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c28af97e-bc31-4511-9e3b-eb2557a52fa3")
-	)
-	(junction
-		(at 57.15 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c982b647-7fb5-42c3-b156-220d570fcb8f")
+		(uuid "eeb7dbb7-80c0-4e38-a719-ef59ecd8a3fe")
 	)
 	(junction
 		(at 85.09 82.55)
@@ -1084,10 +1042,10 @@
 		(uuid "ef09dea7-bf44-4feb-b768-fbe9ec26ed2f")
 	)
 	(junction
-		(at 83.82 52.07)
+		(at 68.58 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f9c02cbe-3b21-4162-98e2-afe7aceda461")
+		(uuid "f38441cf-e590-44f0-a41c-7d439f98e48b")
 	)
 	(wire
 		(pts
@@ -1101,6 +1059,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 60.96) (xy 78.74 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11cb6795-16a2-4ca7-8faf-9774d25226b6")
+	)
+	(wire
+		(pts
 			(xy 85.09 80.01) (xy 85.09 82.55)
 		)
 		(stroke
@@ -1111,213 +1079,103 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 52.07) (xy 83.82 52.07)
+			(xy 93.98 59.69) (xy 93.98 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "23f23ff5-065f-437f-a660-1c78c5e07566")
+		(uuid "20bd6702-e692-4c80-bc99-b050f0da0ccd")
 	)
 	(wire
 		(pts
-			(xy 87.63 52.07) (xy 87.63 53.34)
+			(xy 68.58 60.96) (xy 76.2 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27248098-74e5-46a0-a1f3-c8d034d0aaf7")
+		(uuid "6dd7512b-7e42-4248-aa2e-4ca760b71a40")
 	)
 	(wire
 		(pts
-			(xy 83.82 52.07) (xy 83.82 53.34)
+			(xy 67.31 54.61) (xy 68.58 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ab59df8-fc6b-450e-b883-e4f60e22c3e6")
+		(uuid "88f481bc-97ef-4919-9a89-e1370662a32e")
 	)
 	(wire
 		(pts
-			(xy 93.98 48.26) (xy 93.98 52.07)
+			(xy 76.2 54.61) (xy 76.2 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2afbec4a-7dad-4237-b035-b72a0dad772d")
+		(uuid "8a6f9862-7bd8-4fc3-a26d-d9ab4fbb0e34")
 	)
 	(wire
 		(pts
-			(xy 99.06 52.07) (xy 102.87 52.07)
+			(xy 62.23 60.96) (xy 68.58 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2c9e3d3f-da8d-4497-a620-196aa7be34c5")
+		(uuid "908b4a48-103d-4984-8b9f-87c5586c5f6c")
 	)
 	(wire
 		(pts
-			(xy 77.47 52.07) (xy 80.01 52.07)
+			(xy 78.74 60.96) (xy 82.55 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "32066468-8a5f-4e8e-a1e0-46737d58185b")
+		(uuid "96875dce-cd93-48a0-8602-79f29e4c0729")
 	)
 	(wire
 		(pts
-			(xy 99.06 48.26) (xy 99.06 52.07)
+			(xy 81.28 54.61) (xy 82.55 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3623d7cc-7020-4fbe-b2a9-e23160659e6c")
+		(uuid "9717bced-fe60-4fe5-abb4-464faf3ad109")
 	)
 	(wire
 		(pts
-			(xy 58.42 52.07) (xy 58.42 53.34)
+			(xy 68.58 54.61) (xy 69.85 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e7511f2-9b03-4bea-8296-84b2c7829193")
+		(uuid "97cea6c4-69c3-4ac9-b89d-9f55373b8218")
 	)
 	(wire
 		(pts
-			(xy 50.8 52.07) (xy 52.07 52.07)
+			(xy 82.55 60.96) (xy 88.9 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d5fa2a1-432b-4987-a8dc-ffe4045f8b00")
+		(uuid "9ca2502a-2d6d-4964-bcf9-11696125d611")
 	)
 	(wire
 		(pts
-			(xy 80.01 52.07) (xy 80.01 53.34)
+			(xy 62.23 59.69) (xy 62.23 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59b6416d-9154-4c1e-b401-efa647f0d6b7")
-	)
-	(wire
-		(pts
-			(xy 72.39 48.26) (xy 72.39 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b546a08-79df-49a8-ba20-3c2bf8585451")
-	)
-	(wire
-		(pts
-			(xy 83.82 58.42) (xy 87.63 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "712a94bd-02a9-47e1-83ca-39fca358580f")
-	)
-	(wire
-		(pts
-			(xy 52.07 48.26) (xy 52.07 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77ff0991-8098-4613-bbe5-40f23ae8cb84")
-	)
-	(wire
-		(pts
-			(xy 62.23 52.07) (xy 66.04 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c29cce6-8138-4fd5-ad22-fe9dc5dadd6d")
-	)
-	(wire
-		(pts
-			(xy 58.42 52.07) (xy 62.23 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e6b9c7b-fa50-42c4-a9ed-9ce5be6a52ee")
-	)
-	(wire
-		(pts
-			(xy 58.42 58.42) (xy 62.23 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95ac72c9-4d1f-4fe1-b5b7-38872bc7b733")
-	)
-	(wire
-		(pts
-			(xy 62.23 52.07) (xy 62.23 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95e0b691-3569-465b-8d15-aa65734fad75")
-	)
-	(wire
-		(pts
-			(xy 57.15 52.07) (xy 58.42 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ae9c361-bcdb-4020-8599-18305b23ea9f")
-	)
-	(wire
-		(pts
-			(xy 66.04 52.07) (xy 67.31 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e9c6ea1-6520-430f-bc40-be3c48376db5")
-	)
-	(wire
-		(pts
-			(xy 83.82 52.07) (xy 87.63 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a62f6f89-1891-4be6-a9db-0c699b624508")
-	)
-	(wire
-		(pts
-			(xy 80.01 58.42) (xy 83.82 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad7e6a8e-7109-4596-b660-040b1d22beb0")
+		(uuid "a35b384b-1018-40b5-b650-a73471f4b8e8")
 	)
 	(wire
 		(pts
@@ -1328,6 +1186,16 @@
 			(type default)
 		)
 		(uuid "b482c11f-6fbc-4140-afaa-41ba27ff401d")
+	)
+	(wire
+		(pts
+			(xy 74.93 54.61) (xy 76.2 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb7b64be-d374-46e6-88ef-099dc876aab0")
 	)
 	(wire
 		(pts
@@ -1361,17 +1229,17 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 52.07) (xy 88.9 52.07)
+			(xy 87.63 54.61) (xy 88.9 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9fcae14-fa1c-4e66-9361-1a3a8682e65a")
+		(uuid "de37ece7-9095-4d4c-b583-bceebdb4ddd9")
 	)
 	(wire
 		(pts
-			(xy 66.04 52.07) (xy 66.04 53.34)
+			(xy 88.9 54.61) (xy 88.9 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1381,13 +1249,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 48.26) (xy 57.15 52.07)
+			(xy 82.55 54.61) (xy 82.55 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6b1b14f-9bf0-4500-8d41-005d48ca3c95")
+		(uuid "ed1fb742-8e67-4649-9a02-b97de13921f8")
 	)
 	(wire
 		(pts
@@ -1401,7 +1269,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 58.42) (xy 80.01 58.42)
+			(xy 88.9 60.96) (xy 93.98 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1411,23 +1279,13 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 48.26) (xy 77.47 52.07)
+			(xy 68.58 54.61) (xy 68.58 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f13b7527-8536-4858-98bf-9bd478fad3be")
-	)
-	(wire
-		(pts
-			(xy 62.23 58.42) (xy 66.04 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4d40be8-a271-4d37-a535-9f66c746ef4f")
+		(uuid "f8ed6668-5bdb-4a3c-bb8a-439c7aa6255d")
 	)
 	(wire
 		(pts
@@ -1441,23 +1299,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 62.23 55.88 0)
+		(at 82.55 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "08620c4c-aae6-48a5-90dc-ee474e3e6f49")
-		(property "Reference" "CFL2"
-			(at 62.23 49.276 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 59.182 56.134 90)
+		(property "Reference" "C3"
+			(at 82.55 51.816 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1465,8 +1315,17 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 62.23 55.88 0)
+		(property "Value" "100n"
+			(at 79.502 58.674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 82.55 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1475,7 +1334,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 55.88 0)
+			(at 82.55 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1484,7 +1343,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 62.23 55.88 0)
+			(at 82.55 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1501,7 +1360,7 @@
 		(instances
 			(project "TX-BPF"
 				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CFL2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -1510,7 +1369,7 @@
 	(symbol
 		(lib_name "Conn_Coaxial_1")
 		(lib_id "Connector:Conn_Coaxial")
-		(at 40.64 52.07 0)
+		(at 62.23 54.61 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1519,7 +1378,7 @@
 		(dnp no)
 		(uuid "1b5bc2f3-1d4d-4e3a-8c5a-2b3f13c36825")
 		(property "Reference" "IN1"
-			(at 37.846 52.07 90)
+			(at 59.436 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1527,7 +1386,7 @@
 			)
 		)
 		(property "Value" "SMA"
-			(at 40.9574 47.498 0)
+			(at 62.5474 50.038 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1536,7 +1395,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
-			(at 40.64 52.07 0)
+			(at 62.23 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1545,7 +1404,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 52.07 0)
+			(at 62.23 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1554,7 +1413,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 40.64 52.07 0)
+			(at 62.23 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1584,24 +1443,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Small")
-		(at 91.44 52.07 90)
+		(lib_id "power:GND")
+		(at 78.74 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2733169c-387d-488a-85e5-093a9e785ad0")
-		(property "Reference" "L3"
-			(at 91.186 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L_Small"
-			(at 91.44 49.53 90)
+		(uuid "2ea626be-8dcb-4f19-bb86-381b0f9aa55e")
+		(property "Reference" "#PWR02"
+			(at 78.74 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1609,8 +1460,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "footprints:T50-6"
-			(at 91.44 52.07 0)
+		(property "Value" "GND"
+			(at 78.8416 64.8716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1618,8 +1469,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 91.44 52.07 0)
+		(property "Footprint" ""
+			(at 78.74 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1627,8 +1478,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor, small symbol"
-			(at 91.44 52.07 0)
+		(property "Datasheet" ""
+			(at 78.74 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1636,84 +1487,22 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "594ba1f1-aa0e-4036-a419-f84c1e31c1e2")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "a4298db2-7844-4fc3-9634-373ac077bd39")
+			(uuid "9027e402-c772-42f7-9637-408efb2cd14d")
 		)
 		(instances
-			(project "TX-BPF"
+			(project "QRP-LPF"
 				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Small")
-		(at 69.85 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2c7e4515-f8fc-48b9-91b4-de066bbc7b69")
-		(property "Reference" "L2"
-			(at 69.596 50.292 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L_Small"
-			(at 69.85 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "footprints:T50-6"
-			(at 69.85 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 69.85 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor, small symbol"
-			(at 69.85 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "40b259d7-a259-42c4-aa91-012367a43a4f")
-		)
-		(pin "1"
-			(uuid "8a55dba0-c6ce-4fb0-9c91-527045b6e83c")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "L2")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -1721,91 +1510,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 54.61 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "33f4c1fb-6df6-49c4-b728-81c54c01fa6d")
-		(property "Reference" "CFS2"
-			(at 54.61 45.466 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 54.864 51.308 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
-			(at 54.61 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 54.61 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0a8eb5d8-a4d4-4584-98a5-e7f7d7851bf2")
-		)
-		(pin "1"
-			(uuid "9be69afc-5d88-4f09-833e-46ca583f688a")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CFS2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 58.42 55.88 0)
+		(at 76.2 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3888017e-3b91-425e-8ddf-6728ad3d571a")
-		(property "Reference" "CFL1"
-			(at 58.42 49.276 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 55.372 56.134 90)
+		(property "Reference" "C2"
+			(at 76.2 51.816 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1813,8 +1526,17 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 58.42 55.88 0)
+		(property "Value" "100n"
+			(at 73.152 58.674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 76.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1823,7 +1545,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 55.88 0)
+			(at 76.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1832,7 +1554,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 58.42 55.88 0)
+			(at 76.2 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1849,7 +1571,7 @@
 		(instances
 			(project "TX-BPF"
 				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CFL1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -1925,91 +1647,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 80.01 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "43a5cce6-bc8f-4ae8-a1ba-6740e7cec7a0")
-		(property "Reference" "CSL1"
-			(at 80.01 49.022 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 76.962 56.134 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 80.01 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 80.01 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f2f13997-60ea-4296-8748-82b24f2df1ae")
-		)
-		(pin "1"
-			(uuid "2164b27e-65a8-4f97-b71f-f87733d968c3")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CSL1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 66.04 55.88 0)
+		(at 88.9 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "5681dc10-990a-4fe8-ab32-99051b806f94")
-		(property "Reference" "CFL3"
-			(at 66.04 49.276 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 62.992 56.134 90)
+		(property "Reference" "C4"
+			(at 88.9 51.816 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2017,8 +1663,17 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
-			(at 66.04 55.88 0)
+		(property "Value" "100n"
+			(at 85.852 58.674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2027,7 +1682,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 55.88 0)
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2036,7 +1691,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 66.04 55.88 0)
+			(at 88.9 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2053,7 +1708,7 @@
 		(instances
 			(project "TX-BPF"
 				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CFL3")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -2061,15 +1716,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 87.63 55.88 0)
+		(at 68.58 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "719c36fd-5a27-4f3b-866f-cd785488d239")
-		(property "Reference" "CSL3"
-			(at 87.63 49.022 90)
+		(uuid "5c007f6c-6208-4582-b77c-15b8eed3a619")
+		(property "Reference" "C1"
+			(at 65.532 58.674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2077,7 +1732,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 84.582 56.134 90)
+			(at 65.532 58.674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2085,8 +1740,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 87.63 55.88 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2095,7 +1750,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 55.88 0)
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2104,7 +1759,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 87.63 55.88 0)
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2113,225 +1768,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "27f39433-73f6-4123-b61c-f96f9b24c241")
+			(uuid "ccd10035-b0c7-46c8-a5ec-d5e46f6c0020")
 		)
 		(pin "1"
-			(uuid "6acb93fa-d5a1-403c-a01f-15effc86f3e3")
+			(uuid "ee7f6fb7-23db-4804-be20-5c3da68f18b1")
 		)
 		(instances
-			(project "TX-BPF"
+			(project "QRP-LPF"
 				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CSL3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 107.95 57.15 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c4ed781-2969-4bbf-b75d-8e8998c92ea3")
-		(property "Reference" "#PWR03"
-			(at 107.95 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 107.95 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 107.95 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56a9bb56-8d14-4141-9e4a-6296b5a044a6")
-		)
-		(instances
-			(project "DDX"
-				(path "/564082e5-9fa1-4c90-87d4-4897a8b1b82a"
-					(reference "#PWR0107")
-					(unit 1)
-				)
-			)
-			(project "HF-Pre-Amp"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 54.61 52.07 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8fa75c33-1464-4f0b-a85a-5204fcf838d0")
-		(property "Reference" "CFS1"
-			(at 51.562 53.848 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 54.356 49.022 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 54.61 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 54.61 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c8e1d46a-d575-4cf4-983b-af57c90d46ea")
-		)
-		(pin "1"
-			(uuid "332e114e-9a24-4525-a29e-53a0bcf46c50")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CFS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 74.93 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "943dc521-6079-412a-8b29-2afc05cd75d2")
-		(property "Reference" "CSS2"
-			(at 74.93 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 75.184 51.308 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 74.93 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 74.93 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "47b8c1ad-853e-4c5e-8d46-8c7c3593c04b")
-		)
-		(pin "1"
-			(uuid "bda6cb68-9803-453b-ad3d-6264ec07d673")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CSS2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -2339,15 +1784,15 @@
 	)
 	(symbol
 		(lib_id "Device:L_Small")
-		(at 48.26 52.07 90)
+		(at 85.09 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9b4e83f3-32e2-48d7-82a2-a7a6285ff18d")
-		(property "Reference" "L1"
-			(at 48.006 50.292 90)
+		(uuid "72e8f404-d87e-43c1-a009-2d32e82073b9")
+		(property "Reference" "L3"
+			(at 84.836 52.832 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2355,7 +1800,7 @@
 			)
 		)
 		(property "Value" "L_Small"
-			(at 48.26 49.53 90)
+			(at 85.09 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2363,8 +1808,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "footprints:T50-6"
-			(at 48.26 52.07 0)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2373,7 +1818,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 52.07 0)
+			(at 85.09 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2382,7 +1827,143 @@
 			)
 		)
 		(property "Description" "Inductor, small symbol"
-			(at 48.26 52.07 0)
+			(at 85.09 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8f2e5738-36a5-49c5-8178-3de68c9b24b2")
+		)
+		(pin "1"
+			(uuid "391f1668-a9b1-4725-9af0-6d9bf7902299")
+		)
+		(instances
+			(project "QRP-LPF"
+				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 78.74 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93808a5a-e992-43a4-99a1-7002242f56e2")
+		(property "Reference" "L2"
+			(at 78.486 52.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L_Small"
+			(at 78.74 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
+			(at 78.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor, small symbol"
+			(at 78.74 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f237b1ed-e514-4003-a3bc-b0481c1965d1")
+		)
+		(pin "1"
+			(uuid "8037aaa3-4a5b-4cf7-a3f8-b84a81c9ece2")
+		)
+		(instances
+			(project "QRP-LPF"
+				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Small")
+		(at 72.39 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b4e83f3-32e2-48d7-82a2-a7a6285ff18d")
+		(property "Reference" "L1"
+			(at 72.136 52.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L_Small"
+			(at 72.39 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric_Pad1.05x1.20mm_HandSolder"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor, small symbol"
+			(at 72.39 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,73 +1981,6 @@
 			(project "TX-BPF"
 				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
 					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 83.82 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a10a0d77-d7cf-48a9-9c97-0129c243fa1b")
-		(property "Reference" "#PWR04"
-			(at 83.82 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 83.82 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e7f34fd9-b9be-49f7-b95f-0ef0d3b78aa9")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2607,283 +2121,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 40.64 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d75e0e2c-9055-443d-b8e2-b413a99f4b84")
-		(property "Reference" "#PWR02"
-			(at 40.64 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 40.64 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "547c5f95-78bd-4753-833f-1f7b6e08c548")
-		)
-		(instances
-			(project "DDX"
-				(path "/564082e5-9fa1-4c90-87d4-4897a8b1b82a"
-					(reference "#PWR0107")
-					(unit 1)
-				)
-			)
-			(project "HF-Pre-Amp"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 74.93 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d8f05c2c-baf8-4c66-ab4b-efab7fdafef0")
-		(property "Reference" "CSS1"
-			(at 74.93 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 75.184 55.118 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
-			(at 74.93 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 74.93 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 74.93 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "61f55ff3-e0ad-4c74-a4fa-6d08ecbca3db")
-		)
-		(pin "1"
-			(uuid "fbb4d76b-5055-4e6d-be08-4946ff3aa6fd")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CSS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 83.82 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e49d4d2d-1d98-46dd-92ca-d75f10a28caa")
-		(property "Reference" "CSL2"
-			(at 83.82 49.022 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 80.772 56.134 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
-			(at 83.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 83.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 83.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "003be3b2-2f73-41ba-aea9-56aa0a787d88")
-		)
-		(pin "1"
-			(uuid "73a890f6-db2a-49a7-875c-bee794468dd3")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CSL2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 96.52 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "eac305da-38f6-41cc-add9-95544f436abf")
-		(property "Reference" "CTS1"
-			(at 96.266 54.864 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 96.774 55.118 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 96.52 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 96.52 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ff1350a9-6fe2-43ee-a382-6a5245ce5942")
-		)
-		(pin "1"
-			(uuid "3ddcd701-afe8-4c0d-abcd-85abfb948624")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CTS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 85.09 82.55 180)
 		(unit 1)
@@ -2945,74 +2182,6 @@
 			(project "LPF"
 				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 96.52 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ebde3fdf-0392-4011-a394-38f43c5292f7")
-		(property "Reference" "CTS2"
-			(at 96.52 45.466 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 96.774 51.308 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
-			(at 96.52 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 96.52 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 96.52 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5ebb8e2c-f785-4518-85d7-45c1938034fb")
-		)
-		(pin "1"
-			(uuid "0c8be67c-a7e1-4c02-9379-679e171c0cd3")
-		)
-		(instances
-			(project "TX-BPF"
-				(path "/8c7c31ce-540a-4b41-8881-9f964afe27dd"
-					(reference "CTS2")
 					(unit 1)
 				)
 			)
@@ -3088,7 +2257,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 107.95 52.07 0)
+		(at 93.98 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3096,7 +2265,7 @@
 		(dnp no)
 		(uuid "f19ad7ac-fabb-495d-a171-f93e3bd47084")
 		(property "Reference" "OUT1"
-			(at 110.744 52.07 90)
+			(at 96.774 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3104,7 +2273,7 @@
 			)
 		)
 		(property "Value" "SMA"
-			(at 107.6326 47.498 0)
+			(at 93.6626 50.038 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3113,7 +2282,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount"
-			(at 107.95 52.07 0)
+			(at 93.98 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3122,7 +2291,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 52.07 0)
+			(at 93.98 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3131,7 +2300,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 107.95 52.07 0)
+			(at 93.98 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

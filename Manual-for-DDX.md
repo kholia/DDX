@@ -4,15 +4,16 @@ DDX is a rugged 5W+ digital transceiver featuring manual band switching and
 flexible power capabilities. Designed for reliability and ease of use, it's
 perfect for digital modes like FT8.
 
-DDX is brought to you by `Yantra Research`!
+DDX is brought to you by `Yantra Research`! We are proud to play a small part
+in the `Made In Bharat` movement.
 
 # Supported Modes
 
 - FT8
 
-# Other Modes
+- WSPR (via a dedicated firmware)
 
-- WSPR (a dedicated firmware is in the works)
+# Other Modes
 
 - FT4 (support can be added as per demand)
 
@@ -33,6 +34,10 @@ The following items are required for operating DDX:
   - Traditional "12V" battery (4S LFP or 3S Li-ion or lead-acid)
 
   20v input (typically via PD 3.0) is RECOMMENDED!
+
+- PD Trigger Module
+
+  Something like [this module](https://punoscho.in/product/usb-qc-pd-afc-trigger-decoy-board-module-20v/).
 
 - An antenna
 
@@ -80,23 +85,21 @@ The following items are required for operating DDX:
 
   Can be useful depending on your operating conditions.
 
-- [Optional] PD Trigger Module
-
-  Something like [this module](https://punoscho.in/product/usb-qc-pd-afc-trigger-decoy-board-module-15v/).
-
 - [Optional] 10 meters plus of coax cable if operating an EFHW antenna.
 
 # Supplied components
 
 - DDX transceiver
 
-- 2 x mica insulator pads (for IRF510 and 7809 regulator)
+- 2 x Mica insulator pads (for IRF510 and 7809 regulator)
 
 - 2 x TO-220 bushes (for IRF510 and 7809 regulator)
 
-- 2 x steel screws + spring washers + regular washers + nuts
+- 2 x Steel screws + spring washers + regular washers + nuts
 
 - 1 x 5.5x2.1mm DC power cable (male connector)
+
+- 1 x On-off switch (SPST)
 
 - [Optional] Small TO-220 + TO-3 heat sinks
 
@@ -122,7 +125,7 @@ The following items are required for operating DDX:
 
   The whole assembled PCB can then be raised on M3 standoffs.
 
-  ![M3 standoffs](./Pictures/M3_standoffs.jpg)
+  ![M3 standoffs](./Pictures/M3_standoffs_smaller.jpg)
 
   https://robu.in/product/m3-x-35mm-male-to-female-brass-hex-threaded-pillar-standoff-spacer-12-pcs/
 
@@ -220,9 +223,11 @@ On Android, open the https://time.is/ site to see the clock delta.
 - No calibration is usually required. Just pick up DDX and it is ready to go on
   air. It comes with 26 MHz 0.5ppm TCXO as a standard.
 
-- Low cost (cost-effective)
+- Relatively low cost (cost-effective)
 
-- Stress tested by WSJT-Z and WSJT-X for multiple days
+- Stress tested by WSJT-Z and WSJT-X for multiple days.
+
+  Compatible with `wsjt-x_improved` as well.
 
 - DDX routinely receives FT8 traffic from 80 to 100+ countries using a simple
   5m long EFHW antenna with a BPF attached.
@@ -271,18 +276,25 @@ Note: DDX comes with the firmware installed on it.
 
 # Pricing
 
+Note: The profits earned are dedicated for charity purposes.
+
 - Option 1: Kit with all components (including Pico 2 and TCXO Si5351 module) and blank PCB: 2499 INR (shipping within India included).
 
-- Option 2: 80% assembled boards with remaining components (including Pico 2 and TCXO Si5351 module): 3999 INR (shipping within India included).
+- Option 2: 80% assembled boards with remaining components included (including Pico 2 and TCXO Si5351 module): 3999 INR (shipping within India included).
 
-- Option 3 (SLOW!): Fully assembled and on-air tested DDX: 4999 INR plus shipping at actuals. Note: Heat sink is removed prior to international shipping.
+- Option 3 (SLOW!): Fully assembled and on-air tested DDX: 4999 INR (shipping within India included). Note: Heat sink is removed prior to international shipping.
+
+Please note that international shipping costs around 15 to 20 USD.
 
 # Note
 
 We do NOT have the resources to provide any support at the moment. We expect
 our customers to be hands-on `home brewers`.
 
-DDX is NOT targeted at `appliance operator` category of amateur radio
-operators.
-
 Note: There are NO guarantees provided.
+
+# Thanks
+
+![Made In Bharat](./Pictures/MIB_small.jpg)
+
+Image credit: https://www.freepik.com
